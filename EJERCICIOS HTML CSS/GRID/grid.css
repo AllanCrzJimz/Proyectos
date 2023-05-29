@@ -1,0 +1,20 @@
+.contenedor{
+    background-color: black;
+    border: 5px solid blueviolet;
+    display: grid;
+    color: azure;
+    /*grid-template-columns: 100px 200px 300px;*/  /*mantener secciones en forma de matriz*/
+    grid-template-rows: 150px 250px 250px; /*Mantener renglones*/
+    /*grid-auto-rows: 150px; /*Crea filas del mismo tamaño*/
+    grid-auto-columns: 100px;
+    grid-auto-flow: column; /*crea columnas en lugar de filas*/
+    row-gap: 15px; /*Espacio entre filas*/
+    /*column-gap: 30px; /*Espacio entre columnas*/
+    /*gap: 40px; /*Esapaciado uniforme*/
+}
+
+.item{
+    border: 5px solid greenyellow;
+    font-size: 4rem;
+}
+

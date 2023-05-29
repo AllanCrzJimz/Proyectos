@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: aliceblue;
+    color: grey;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    display: inline-block;
+    width: 45%;
+}
+
+.logo img{
+    width: 120px;
+    margin: 20px;
+}
+
+.nav{
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+    position: absolute;
+    top: 3.5rem;
+}
+
+.nav ul{
+margin: right;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 25px 15px;
+    padding: left;
+}
+
+/*Seccion principal*/
+
+.equipos,.informacion{
+    display: inline-block;
+}
+
+.equipos{
+    width: 30%;
+    background-color: antiquewhite;
+    border-right: 1px solid black;
+}
+
+.equipos div{
+    background-color: aliceblue;
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.informacion{
+    width: 69%;
+    padding: 80px;
+    position: absolute;
+}
+
+
+.informacion h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.informacion p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

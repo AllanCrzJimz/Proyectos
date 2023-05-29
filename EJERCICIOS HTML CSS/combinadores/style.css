@@ -1,0 +1,15 @@
+h2 + p {
+    color: red;
+}
+
+#general h2 ~ p{
+    color: blue;
+}
+
+div > p{
+color: green;
+}
+
+div > p{
+    font-family: monospace;
+}

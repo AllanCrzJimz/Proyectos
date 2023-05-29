@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DentalHealth</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <main>
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="130px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Inicio</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Catalogos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Citas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="carrusel">
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/dent1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/dent2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+     <img src="img/dent3.jpg" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-6 text-justify">
+            <h1>Sistema de citas dentales</h1>
+            <p class="d-none d-md-block">Este sistema tiene como finalidad ayudar a Dental Health a llevar a cabo su cotrol de citas entre otros recursos que se manejan como son usuarios y proveedores.</p>
+            <a href="#" class="btn btn-outline-light">Administrar citas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+<section id="formulario" class="mt-5 mb-5">
+  <div class="container">
+    <form class="mt-4 mb-4">
+      <div class="row">
+        <h3 class="mb-4">Registrar Artículos Dentales</h3>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre del producto</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+             <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+
+
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tipo de material</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecciona</option>
+              <option value="1">Plastico</option>
+              <option value="2">Metal</option>
+              <option value="3">Resina</option>
+            </select>
+          </div>
+        </div>
+
+         <div class="col-12">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Proveedor</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecciona</option>
+              <option value="1">Proveedor 1 </option>
+              <option value="2">Proveedor 2</option>
+              <option value="3">Proveedor 3</option>
+              <option value="4">Proveedor 4</option>
+              <option value="5">Proveedor 5</option>
+            </select>
+          </div>
+        </div>
+
+
+          <div class="col-12">
+            <div class="mb-3">
+               <label for="exampleFormControlInput1" class="form-label">Fecha de registro</label>
+               <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+        </div>
+
+
+
+          <div class="col-12">
+            <div class="mb-3">
+               <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Nacional
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Extranjero
+                </label>
+              </div>
+            </div>
+        </div>
+
+
+         <div class="col-12">
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+      <footer class="pb-5 pt-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12 col-lg">
+              <a href="">Preguntas Frecuentes</a>
+            </div>
+
+             <div class="col-12 col-lg">
+              <a href="">Sitio Web</a>
+            </div>
+
+             <div class="col-12 col-lg">
+              <a href="">Productos</a>
+            </div>
+
+
+             <div class="col-12 col-lg">
+              <a href="">Blog</a>
+            </div>
+
+
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

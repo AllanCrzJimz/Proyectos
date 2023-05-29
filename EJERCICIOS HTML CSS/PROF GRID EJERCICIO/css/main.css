@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+*{/*Todos los elementos de la página aplican los estilos que seencuentren aqui*/
+	box-sizing: border-box;
+}
+
+body{/*Toda la pantalla del contenido*/
+	margin: 0px;/* Quita margin y padding */
+	padding: 0px;
+	font-size: 15px;
+	font-family: 'Quattrocento', serif;
+
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+header{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+header nav{/* mas especifico para que no exista conflicto*/
+	display: grid;/* Justificar el contenido , es decir mandarlo a los extremos o en el centro*/
+	grid-template-columns: 1fr 1fr;
+	height: auto;
+}
+
+/*posicionar una lista horizontal*/
+
+
+
+header nav .nav-left-section{
+	width: 250px;
+	height: auto;
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+
+nav .nav-left-section a{
+	margin-left: 10px;
+	color: #000;
+	font-size: 15px;
+
+}
+
+header .header-icons-container
+{
+	
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #000;
+    justify-content: flex-end;
+}
+
+header .header-icons-container .icons
+{
+	width: 300px;
+	height: auto;
+	display: flex;
+	justify-items: flex-end;
+	align-content: center;
+	justify-content: space-between;
+	justify-self: end;
+	margin-right: 50px;
+	flex-wrap: wrap;
+}
+
+header .icons span{
+	color: #fff;
+}
+
+
+header .icons span:hover{
+	animation-name: example;
+    animation-duration: 4s;
+
+}
+
+nav .nav-logo-container{
+	margin-left: 50px;
+
+}
+
+nav .nav-logo-container img{
+	width: 220px;
+	margin-top: 10px;
+}
+
+nav .profile-link{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 50px;
+}
+
+nav .profile-link a{
+	color: #000;
+	border-bottom:  1px solid #000;
+}
+
+
+.grid-container{
+	max-width: 980px;
+	margin: auto;
+}
+
+
+
+/*Aquí empieza el home */
+
+.home-main{
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	height: 530px;
+	background-image:url('../assets/img/jpon-3.jpeg');
+	background-position: center;
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+.home-main .home-title{
+	display: grid;
+	grid-column: 2;
+	justify-items: center;
+	height: 350px;
+	margin-top: 80px;
+}
+
+
+.home-main-text{
+	font-size: 30px;
+	font-weight: 700px;
+	letter-spacing: 10px;
+	color: #fff;
+	text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+.home-main-button{
+	width: 110px;
+	height: 50px;
+	background:  #48cfad;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+}
+
+
+.home-main-button a{
+	color:#fff;
+}
+
+
+/*Sección de texto*/
+
+.home-information{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-main .home-about{
+	display: grid;
+	grid-column: 1;
+	justify-items: center;
+	height: auto;
+}
+
+.home-about{
+	text-align: justify;
+	padding: 30px;
+}
+
+
+.enlaces-informacion{
+	background: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+/*footer*/
+
+footer{
+	background: #000;
+	height: 90px;
+
+}
+
+.footer-text{
+	text-align: justify;
+	color: #fff;
+	padding: 20px;
+	margin: 0px;
+
+}
+
+
+
+
+
+
+
+/* Manejo de clases en css segunda página*/
+
+.blogs-main{
+	display: grid;
+
+}
+
+.blogs-news-container{
+	background-color:#e6e9ed ;
+	padding: 0px 50px 40px; /*espacio interno de un contenedor*/
+}
+
+
+.blogs-main-new{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container{
+	grid-column: 1;
+}
+
+
+.blogs-news-img-container img{
+	width: 80%;/* Grid estipulado con una dimensión al manejar porcentajes se adapta  a las dimensiones del grid*/
+ }
+
+.blogs-new-info-container{
+	grid-column: 2;
+}
+
+.blogs-new-info-container p{
+	margin-bottom: 35px;
+	font-size: 14px;
+}
+
+.blogs-button{
+	border: 1px solid #47cfac;
+	padding: 10px 15px;
+	font-size: 12px;
+}
+
+
+
+/*Segunda sección de la página*/
+
+.blogs-post-container{
+	padding: 0px 50px 40px;
+}
+
+
+.blogs-post-container h2{
+	border-bottom: 1px solid #e6e9ed;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+.blogs-post-container .post-container{
+	display: inline-block; /*Poner elementos en forma horizontal*/
+	padding-left: 10px;
+	max-width: 30%;
+	margin-bottom: 50px;
+}
+
+.blogs-post-container .post-container p{
+	margin-bottom: 35px;
+}
+
+.blogs-post-container .post-container img{
+	width: 100%;
+}
+
+
+/*tercera pagina*/
+.blog-post-img-container{
+	padding: 10px 50px 40px;
+
+}
+
+
+.blog-post-img-container img{
+	width: 100%;
+}
+
+
+.blog-post-main-container{
+	padding: 0px 50px 40px;
+}
+
+.blog-post-main-container h3{
+	border-bottom: 1px solid #47cfac;
+	padding-bottom: 20px;
+}
+
+.blog-post-main-container article h1{
+	font-size: 35px;
+}
+
+
+/*animación de hover*/
+
+
+@keyframes example {
+  from {color: #fff;}
+  to {color: #47cfac;}
+}
+
+
+/*menu responsive*/
+
+.menu{
+    display: none;
+}
+
+
+.aparecer{
+	display: flex;
+}
+
+@media screen and (max-width: 800px) and (min-width: 100px) { 
+    
+    .menu{
+        display: block;
+        margin-right: 20px;
+    }
+
+   nav .profile-link   {
+   		margin-right: 0px;
+    }
+    
+  header nav  .nav-left-section {
+    width:100%;
+    position: absolute;
+    background: #48cfad;  
+    display: none;
+    margin-top: 270px;
+         
+    }
+
+
+    nav .profile-link li  {
+   		color: #fff;  
+   		padding:10px 10px 10px 10px;
+   		margin:10px 10px 10px 10px ;
+   		color: #fff;
+   		width: 90%;
+   		border-bottom: 1px solid #fff;
+    }
+
+    nav .profile-link a {
+   		border: none;
+   		color: #fff;
+    }
+
+    .icofont-navigation-menu{
+    	color: #000;
+    }
+
+
+    nav .nav-logo-container {
+    	margin-left: 0px;
+	}
+
+
+	.aparecer{
+		display: inline-block !important;
+	}
+
+}
+
+
+
+/*contacto*/
+.contact-main-container{
+	width: 100%;
+	height: auto;
+	background: #d2d0d0;
+	text-align: center;
+	padding-bottom: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.contact-main-container div{
+	padding: 20px;
+}
+
+.contact-main-container div h3 {
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left,.contact-right{
+	text-align: center;
+}
+
+.contact-main-container img{
+	width: 100px;
+}
+
+
+/* formulario */
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+label {
+    display: block;
+    text-align: left;
+  }
+
+  button,
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lighten;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+
+ .full {
+  grid-column: 1;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image:url('../assets/img/japon.jpg');
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Comida*/
+.blogs-food-container,.blogs-food-two-container{
+	background-color:#f2f0f0 ;
+	padding: 20px 50px 40px; /*espacio interno de un contenedor*/
+	margin-bottom: 40px;
+}
+
+.blogs-food-two-container{
+	background-color:#fff;
+}
+
+
+.blogs-main-food{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr;
+}
+
+
+.blogs-main-food-two{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 2fr;
+}
+
+.blogs-food-img-container{
+	grid-column: 1;
+}
+
+
+.blogs-food-two-img-container{
+	grid-column: 2;
+	text-align: right;
+}
+
+
+.blogs-food-img-container img{
+	width: 80%;/* Grid estipulado con una dimensión al manejar porcentajes se adapta  a las dimensiones del grid*/
+ }
+
+ .blogs-food-two-img-container img{
+	width: 80%;/* Grid estipulado con una dimensión al manejar porcentajes se adapta  a las dimensiones del grid*/
+ }
+
+.blogs-food-info-container{
+	grid-column: 2;
+}
+
+.blogs-food-two-info-container{
+	grid-column: 1;
+}
+
+.blogs-food-info-container,.blogs-food-two-info-container p{
+	margin-bottom: 35px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+
+  

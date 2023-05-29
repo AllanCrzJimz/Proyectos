@@ -1,0 +1,47 @@
+.nav{
+	background-color: #EBD0B4;
+	padding: 50px;
+	list-style: none; /*Quita estilo de una lista*/
+	text-align: right;
+	border: 3px solid black;
+}
+.nav li{
+	display: inline;
+	font-size: 15px;
+	margin: 25px 15px;
+	padding-left: 20px;
+	width: 10px;
+
+}
+
+#logo{
+  	width: 5%;
+	float: left;
+	text-align: left;
+	padding: 4px;
+}
+
+#tribus{
+	background-color: #EBD0B4;
+	border: 3px solid black;
+	text-align: center;
+	display: inline-block;
+
+}
+
+#content{
+	background-color: #EBD0B4;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+.box{
+	display: flex;
+	padding: 10px;
+}
+
+#padre{
+	background-color: #EBD0B4;
+	border: 3px solid black;
+
+}

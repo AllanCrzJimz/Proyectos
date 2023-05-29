@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+main{
+    box-sizing: 100vw;
+    margin: 100vh;
+    padding: black;
+}
+
+
+section{
+    width: 80%; /**/
+    min-width: 320; /**/
+    max-width: 500px; /**/
+    min-height: 500px; /**/
+    margin: 0 auto; /**/
+    background: black; /**/
+}

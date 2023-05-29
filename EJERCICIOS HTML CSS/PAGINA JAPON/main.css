@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+
+header nav .nav-left-section{
+	width: 250px;
+	height: auto;
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+
+nav .nav-left-section a{
+	margin-left: 10px;
+	color: #000;
+	font-size: 15px;
+
+}
+
+
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-content: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+header .icons span{
+    color: #fff;
+}
+
+header .icons span:hover{
+	animation-name: example;
+    animation-duration: 4s;
+
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img{
+    width: 50px;
+    margin-top: 10px;
+}
+
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50PX;
+}
+
+nav .profile-link a{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
+
+/*TERMINA EL HEADER*/
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 530px;
+    background-image: url(japonP.jpg.opdownload);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-main .home-title{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home-main-text{
+    font-size: 30px;
+    font-weight: 700px;
+    color: #fff;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.home-main-button{
+    width: 110px;
+    height: 50px;
+    background-color: blanchedalmond;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+}
+
+.home-main-button a{
+	color:#fff;
+}

@@ -1,0 +1,16 @@
+.contenedor{
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(132, 104, 158);
+    display: grid;
+    color: azure;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.item{
+    border: 5px solid rgb(238, 238, 84);
+    font-size: 2rem;
+    text-align: center;
+}
+

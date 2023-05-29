@@ -1,0 +1,12 @@
+/*rem - Referencia al estilo que tenga la etiqueta root o el root de nuestro html*/
+html{
+    font-size: 62.5%; /*Dimension de fuente, un rem va ser igual a 10Pixeles*/
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+main div p{
+    font-size: 2rem;
+}

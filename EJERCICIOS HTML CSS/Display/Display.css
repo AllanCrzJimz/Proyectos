@@ -1,0 +1,16 @@
+.nav{
+    background-color: pink;
+    padding: 20px;
+    list-style: none; /*Quita el estilo de una lista*/
+    text-align: center;
+}
+
+.nav li{
+    display: block;
+    display: inline;
+    display: inline-block;
+    font-size: 20px;
+    margin: 300px 30px;
+    padding: left 40px;
+    width: 20px;
+}

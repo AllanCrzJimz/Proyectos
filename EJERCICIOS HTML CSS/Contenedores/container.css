@@ -1,0 +1,27 @@
+
+.contenedor{
+    background-color: rgb(0, 0, 0);
+    border: 5px solid blueviolet;
+    display: grid;
+    color: azure;
+    gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    /*justify-content: end;*/ /*alinear contenedor al centro*/
+    /*align-items: end;*/
+    place-content: start; /*Alinea items dentro del contenedor*/
+    /*justify-items: end;*/
+    /*align-items: end;*/
+    place-items: center;
+}
+
+.item{
+    border: 5px solid greenyellow;
+    font-size: 4rem;
+}
+
+.item-2{
+    justify-self: start;
+    align-self: end;
+}
